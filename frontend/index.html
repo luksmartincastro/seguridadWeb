@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/dashboard/ -->
+<html lang="es" ng-app="seguridadWeb">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="cromados">
+    <meta name="author" content="nortuc">
+    <link rel="icon" href="#" class="glyphicon glyphicon-th">
+
+    <title>Seguridad web</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bower_components/dashboard.css" rel="stylesheet">
+    <link href="./bower_components/estilo.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Seguridad web</a>
+        </div>
+        
+      </div>
+    </nav>
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+     <div ng-view></div>
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <!-- IE10 viewport hack for Surface/desktop Windows 
+    <script src="./bower_components/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+    <script src="./bower_components/ie10-viewport-bug-workaround.js"></script>
+    8 bug -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script> 
+    <script src="bower_components/satellizer/satellizer.js"></script>  
+
+    <script src="scripts/router.js"></script>
+    <script src="scripts/controladores/AdminCtrl.js"></script>    
+
+    <script src="scripts/controladores/AtPublicoCtrl.js"></script>            
+    <script src="scripts/controladores/TecnicoCtrl.js"></script>
+    <script src="scripts/controladores/AuthCtrl.js"></script>        
+    <script src="scripts/servicios/TecnicoServ.js"></script>        
+
+</body></html>
